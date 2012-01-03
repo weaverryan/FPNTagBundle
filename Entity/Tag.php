@@ -14,25 +14,4 @@ use DoctrineExtensions\Taggable\Entity\Tag as BaseTag;
 
 class Tag extends BaseTag
 {
-    protected $slug;
-
-    /**
-     * Returns tag slug
-     * 
-     * @return string
-     */
-    public function getSlug()
-    {
-        return $this->slug;
-    }
-
-    /**
-     * Sets tag slug
-     * 
-     * @return string
-     */
-    public function setSlug($slug)
-    {
-        $this->slug = $slug;
-    }
 }

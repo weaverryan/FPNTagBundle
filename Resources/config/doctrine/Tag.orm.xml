@@ -7,7 +7,6 @@
     <mapped-superclass name="FPN\TagBundle\Entity\Tag" table="fpn_tag_tag">
 
         <field name="name"          column="name"           type="string"   length="50"     unique="true" />
-        <field name="slug"          column="slug"           type="string"   length="50"     unique="true" />
 
         <field name="createdAt"     column="created_at"     type="datetime" />
         <field name="updatedAt"     column="updated_at"     type="datetime" />

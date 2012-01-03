@@ -30,11 +30,8 @@ class FPNTagExtension extends Extension
 
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('orm.xml');
-        $loader->load('util.xml');
 
         $container->setParameter('fpn_tag.entity.tag.class', $config['model']['tag_class']);
         $container->setParameter('fpn_tag.entity.tagging.class', $config['model']['tagging_class']);
-
-        $container->setAlias('fpn_tag.slugifier', $config['service']['slugifier']);
     }
 }

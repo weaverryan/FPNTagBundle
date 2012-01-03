@@ -33,12 +33,6 @@ class Configuration implements ConfigurationInterface
                         ->scalarNode('tagging_class')->isRequired()->cannotBeEmpty()->end()
                     ->end()
                 ->end()
-                ->arrayNode('service')
-                    ->addDefaultsIfNotSet()
-                    ->children()
-                        ->scalarNode('slugifier')->defaultValue('fpn_tag.slugifier.default')->cannotBeEmpty()->end()
-                    ->end()
-                ->end()
             ->end();
 
         return $treeBuilder;
